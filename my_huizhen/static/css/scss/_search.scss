@@ -1,0 +1,21 @@
+#search{
+    .ui-label-list{
+        .ui-label{
+            border-radius: 2px;
+            border: none;
+            //background-color: #f8f8f8;
+            color: #999999;
+        }
+    }
+    .search-list{
+        display: none;
+        position: fixed;
+        top: 52px;
+        left: 0;
+        right: 0;
+        z-index: 4;
+        bottom: 0;
+        background-color: rgba(0,0,0,.5);
+    }
+
+}

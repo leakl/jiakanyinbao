@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>掌上医院</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <script src="static/js/lib/zepto.min.js" type="text/javascript"></script>
+
+</head>
+<body class="bg-gray">
+<div id="header">
+    <!--<span class="return"><i class="iconfont">&#xe600</i>返回</span>-->
+    <h2>掌上医院</h2>
+    <!--<span class="menu"></span>-->
+</div>
+<div id="weixin">
+    <ul id="weixin-list">
+        <li class="li-time"><span>2016年3月22日10:17</span></li>
+        <li class="box-list">
+            <h2>待缴费通知 <br/><span class="time">3月22日</span></h2>
+
+            <p class="des">
+                <span>你好！你有一项新的待缴费项目。</span><br/>
+                就诊人：<span>*慧</span><br/>
+                卡号：<span>62****565</span><br/>
+                就诊医院：<span>广东省中医院</span><br/>
+                缴费类型：门诊缴费 <br/>
+                缴费金额：190元 <br/>
+                <span>使用微信支付，有效减小排队等候时间，无需手续费。</span><br/>
+            </p>
+            <a class="more" href="querenzhifu.html"><span>详情</span><i class="iconfont">&#xe60c;</i></a>
+        </li>
+        <!--<li class="li-time"><span>2016年2月9日10:54</span></li>-->
+        <!--<li class="box-list">-->
+            <!--<h2>待缴费通知 <br/><span class="time">1月29日</span></h2>-->
+
+            <!--<p class="des">-->
+                <!--<span>你好！你有一项新的待缴费项目。</span><br/>-->
+                <!--就诊人：<span>*慧</span><br/>-->
+                <!--卡号：<span>62****565</span><br/>-->
+                <!--就诊医院：<span>广东省中医院</span><br/>-->
+                <!--缴费类型：门诊缴费 <br/>-->
+                <!--缴费金额：190元 <br/>-->
+                <!--<span>使用微信支付，有效减小排队等候时间，无需手续费。</span><br/>-->
+            <!--</p>-->
+            <!--<a class="more" href="#"><span>详情</span><i class="iconfont">&#xe60c;</i></a>-->
+        <!--</li>-->
+    </ul>
+    <ul class="pic-list">
+        <li class="li-time"><span>2016年03月23日10:54</span></li>
+        <li  onclick="window.location='weiXinDetail.html'">
+            <div class="out-item">
+                <h4 class="h4-title">中国患者使用国外抗癌新药绿色通道</h4>
+                <div class="msg_thumb"><img src="static/images/640.webp.jpg"> </div>
+            </div>
+        </li>
+    </ul>
+    <div id="bottomNav">
+        <div class="tag">
+            <span class="tag-text">医院名医 <i class="iconfont">&#xe612;</i></span>
+            <div class="bottomNav-menu">
+                <a href="http://wx.yx129.net/show.php?pid=291">掌上医院</a>
+                <!--<a href="#">医院名医2</a>-->
+                <!--<a href="#">医院名医3</a>-->
+            </div>
+        </div>
+        <div class="tag">
+            <span class="tag-text">就医助手 <i class="iconfont">&#xe612;</i></span>
+            <!--<div class="bottomNav-menu">-->
+                <!--<a href="#">就医助手1</a>-->
+                <!--<a href="#">就医助手2</a>-->
+                <!--<a href="#">就医助手3</a>-->
+                <!--<a href="#">就医助手4</a>-->
+            <!--</div>-->
+        </div>
+        <div class="tag">
+            <span class="tag-text">个人中心 <i class="iconfont">&#xe612;</i></span>
+            <div class="bottomNav-menu">
+                <a href="userCenter/index.html">个人超级中心</a>
+                <a href="#">排队候诊</a>
+                <a href="#">挂号记录</a>
+                <a href="#">缴费记录</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $('#bottomNav .tag .tag-text').click(function(event){
+        var o = $(this).parents('.tag');
+        if(o.hasClass('active')){
+//            event.stopPropagation();
+            event.preventDefault();
+            o.removeClass('active');
+        }else{
+            o.addClass('active').siblings().removeClass('active');
+
+        }
+
+    })
+    $('#weixin-list').click(function(){
+        $('#bottomNav .tag').removeClass('active');
+    })
+</script>

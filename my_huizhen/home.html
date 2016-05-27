@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>首页</title>
+  <script type="text/javascript" charset="UTF-8"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body ontouchstart style="background-color: #ebeced">
+<section class="ui-container" id="home">
+  <div class="space10"></div>
+  <div class="ui-searchbar-wrap">
+    <div class="ui-searchbar">
+      <i class="ui-icon-search"></i>
+
+      <div class="ui-searchbar-text">请输入医院、科室、专家名、疾病</div>
+      <div class="ui-searchbar-input">
+        <input value="" type="tel" placeholder="请输入医院、科室、专家名、疾病" autocapitalize="off">
+      </div>
+      <i class="ui-icon-close"></i>
+    </div>
+    <button class="ui-searchbar-cancel" id="okBtn">搜索</button>
+    <button class="ui-searchbar-cancel" id="cancel">取消</button>
+  </div>
+  <div class="header-zhujia"><span>预约专家</span></div>
+  <div class="bgWhite">
+    <div id="zhuanjia" data-href="#">
+      <div class="zhuanjiaBtn">
+        <i class="h_icon h_icon_1"></i>
+
+        <div>按专家查找</div>
+      </div>
+    </div>
+
+    <ul class="ui-tiled ui-border-b">
+      <li class="ui-border-r" data-href="yuyue/keshiList.html">
+        <i class="h_icon h_icon_2"></i>
+
+        <div>按科室查找</div>
+      </li>
+      <li data-href="yuyue/doctorList.html">
+        <i class="h_icon h_icon_3"></i>
+
+        <div>按专家查找</div>
+      </li>
+
+    </ul>
+  </div>
+
+
+</section>
+<!-- /.ui-container-->
+<script src="static/js/lib/zeptojs/zepto.min.js"></script>
+<script src="static/js/common.js"></script>
+<script type="text/javascript">
+  $('.ui-searchbar').click(function () {
+    $('.ui-searchbar-wrap').addClass('focus');
+    $('.ui-searchbar-input input').focus();
+  });
+  $('#cancel').click(function () {
+    $('.ui-searchbar-wrap').removeClass('focus');
+  });
+
+  $('.ui-icon-close').click(function () {
+    $('.ui-searchbar-input input').val('');
+  })
+
+  $('#okBtn').click(function () {
+    var sname = $("#sname").val();
+    if (!sname) {
+      $Y.tips('请输入搜索内容');
+      return false;
+    } else {
+      window.location.href = "/Mobile/Doctor/findDoctor?sname=" + sname;
+    }
+
+  })
+</script>
+</body>
+</html>

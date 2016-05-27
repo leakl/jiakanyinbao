@@ -1,0 +1,54 @@
+$b-pindding:10px 30px;
+.btn{
+  display: inline-block;
+  border: solid 1px #ccc;
+  outline: none;
+  text-align: center;
+  padding: $b-pindding;
+  color: #222;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: inherit;
+  font-family: inherit;
+
+}
+
+
+
+.btn-ok{
+  background-color: $okColor;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+}
+.btn-remove{
+  background-color: #fe9400;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+}
+
+.btn-small{
+  padding:nth($b-pindding,1)/1.5 nth($b-pindding,2)/1.5;
+  font-size: small;
+}
+
+.btn-lager{
+  padding:nth($b-pindding,1)*1.2 nth($b-pindding,2)*1.2;
+  font-size: large;
+}
+.btn-block{
+  display: block;
+  width: 100%;
+}
+.btn-warp{
+  //padding: 15px;
+  display: flex;
+  .btn{
+    display: block;
+    flex: 1;
+    margin: 15px;
+    &:first-child{margin-right: 7px;}
+    &:last-child{margin-left: 7px;}
+  }
+}

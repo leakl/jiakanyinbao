@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>支付记录</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <script src="static/js/lib/zepto.min.js" type="text/javascript"></script>
+
+</head>
+<body class="bg-gray">
+<div id="header">
+    <span class="return" onclick="window.location='index.html'"><i class="iconfont">&#xe600</i>返回</span>
+    <h2>支付记录</h2>
+    <span class="menu"></span>
+</div>
+<div class="userCenterBox">
+    <ul class="y-list">
+       <li class="r-item">
+           <div class="ac-header">
+               <div class="flex">
+                   <div class="name">广东省中医院</div>
+                   <div class="mate">￥4.00</div>
+               </div>
+               <p>订单总额　￥190.00 </p>
+               <p class="states">支付成功 </p>
+               <p class="time">5月27日　10:32 </p>
+               </div>
+           <div class="ac-content show">
+               <div class="title">支付详情</div>
+               <div class="flex">
+                   <div class="name">医保赔付 </div>
+                   <div class="mate">86.00元</div>
+               </div>
+               <div class="flex">
+                   <div class="name">新华保险赔付 </div>
+                   <div class="mate">90.00元</div>
+               </div>
+               <div class="flex">
+                   <div class="name">积分抵扣</div>
+                   <div class="mate">10.00元</div>
+               </div>
+               <div class="flex">
+                   <div class="name">微信支付</div>
+                   <div class="mate">4.00元</div>
+               </div>
+               <a href="userCenter/detail.html" class="a-more">就诊详情<i class="iconfont">&#xe60c;</i></a>
+           </div>
+           <div class="action-arrow js-action-arrow show"><i class="iconfont"></i></div>
+       </li>
+    </ul>
+    <ul class="y-list">
+        <li class="r-item">
+            <div class="ac-header">
+                <div class="flex">
+                    <div class="name">广东省中医院</div>
+                    <div class="mate">￥77.00</div>
+                </div>
+                <p>订单总额　￥140.00 </p>
+                <p class="states">支付成功 </p>
+                <p class="time">3月19日　16:01 </p>
+            </div>
+            <div class="ac-content">
+                <div class="title">支付详情</div>
+                <div class="flex">
+                    <div class="name">医保赔付</div>
+                    <div class="mate">63.00元</div>
+                </div>
+                <div class="flex">
+                    <div class="name">银行卡支付</div>
+                    <div class="mate">77.00元</div>
+                </div>
+                <a href="userCenter/detail1.html" class="a-more">就诊详情<i class="iconfont">&#xe60c;</i></a>
+            </div>
+            <div class="action-arrow js-action-arrow"><i class="iconfont"></i></div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //手风琴
+        $(document).on('click','.js-action-arrow ',function(){
+            $(this).toggleClass('show');
+            $(this).prev().toggleClass('show');
+        })
+    });
+</script>

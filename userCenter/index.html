@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <style>
+        .myhuizhen{
+            background-image: url("../static/images/huizhen.png");
+            background-position: 0 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+        .myjifen{
+            background-image: url("../static/images/jifen.png");
+            background-position: 0 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-gray">
+<div id="header">
+    <span class="return" onclick="window.location='../index.html'"><i class="iconfont">&#xe600</i>返回</span>
+    <h2>个人中心</h2>
+    <span class="menu"></span>
+</div>
+<div class="userCenterBox">
+    <ul class="y-list">
+        <li class="arrow"  onclick="window.location='myInfo.html'">
+            <div class="pic"><img src="../static/images/user-def.png" width="60" height="60"/> </div>
+            <div class="info">
+                <div class="title">*慧
+                    <i class="iconfont icon-woman">&#xe60b;</i>
+                    <!--<i class="iconfont icon-man">&#xe60a;</i>-->
+                </div>
+                <div class="des">就诊卡：61***62</div>
+            </div>
+        </li>
+        <li class="arrow" onclick="window.location='myFamily.html'">
+            <i class="iconfont icon-usercenter">&#xe609;</i>
+            <span class="userText">我的家人</span>
+        </li>
+        <li class="arrow" onclick="window.location='myDoctor.html'">
+            <i class="iconfont icon-usercenter">&#xe60e;</i>
+            <span class="userText">我的医生</span>
+        </li>
+        <li class="arrow" onclick="window.location='guaHaoRecord.html'">
+            <i class="iconfont icon-usercenter">&#xe60d;</i>
+            <span class="userText">挂号记录</span>
+        </li>
+        <li class="arrow" onclick="window.location='../pay_ok.html'">
+            <i class="iconfont icon-usercenter">&#xe60d;</i>
+            <span class="userText">缴费记录</span>
+        </li>
+        <li class="arrow" onclick="window.location='../my_huizhen/myBooking/list.html'">
+            <i class="iconfont myhuizhen"></i>
+            <span class="userText">我的会诊</span>
+        </li>
+        <li class="arrow">
+            <i class="iconfont myjifen"></i>
+            <span class="userText">我的积分</span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

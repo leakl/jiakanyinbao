@@ -1,0 +1,80 @@
+
+.keshi-item{
+    .ui-avatar{
+
+        width: 60px;
+        height: auto;
+
+        &.radius{
+            border-radius:$radius;
+
+        }
+    }
+    i{
+        font-size: inherit;
+        &.ui-icon-like{
+            color: $red;
+        }
+        &.ui-icon-star{
+            color: $pink;
+        }
+    }
+    .num{
+        color: $pink;
+        padding-right: 5px;
+    }
+    .source{
+        //padding-left: 10px;
+    }
+    .zc-tit{
+        color: $greycolor;
+        font-size: $smallfontsize;
+    }
+    .ui-list-info{
+        .small{font-size: 12px}
+    }
+}
+
+#avatarInfo{
+    //border-radius: 10px;
+    //margin: 15px;
+    background-color: #fff;
+    .ui-avatar{height: 90px; width: 70px;
+     span{
+         border-radius: 0;
+     }
+    }
+    .ui-icon-like,.ui-icon-star{display: inline;font-size: 20px;line-height: 1;}
+    .ui-icon-star{color: $red;font-size: 30px}
+    .avatar-info{
+        display: block;
+        div{
+            margin-top: 3px;
+        }
+    }
+
+    .tips{
+        padding: 12px 10px;
+        font-size: 14px;
+        color: #777;
+        .source{padding-left: 10px}
+        position: relative;
+        .ui-btn{
+            float: right;
+            //position: relative;o
+        }
+    }
+
+}
+.cost{
+    font-size: 18px;
+    color: orange;
+}
+#yuyue{
+
+    .subContent{padding: 20px 0;background-color: #fff;font-size: 14px}
+    .ui-select select{direction: rtl;text-align: right}
+
+
+
+}

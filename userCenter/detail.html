@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>就诊详情</title>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <script src="../static/js/lib/zepto.min.js" type="text/javascript"></script>
+    <script src="../static/js/lib/fastclick.min.js" type="text/javascript"></script>
+
+</head>
+<body class="bg-gray">
+<div id="header">
+    <span class="return" onclick="window.location='../record.html'"><i class="iconfont">&#xe600</i>返回</span>
+    <h2>就诊详情</h2>
+    <span class="menu"></span>
+</div>
+<div class="userCenterBox">
+    <ul class="y-list">
+        <li class="flex">
+            <div class="name">姓名</div>
+            <div class="mate">*慧</div>
+        </li>
+        <li class="flex">
+            <div class="name">就诊卡号</div>
+            <div class="mate">61****62</div>
+        </li>
+    </ul>
+
+    <ul class="y-list">
+       <li class="flex">
+           <div class="name">医院</div>
+           <div class="mate">广东省中医院大德路分院</div>
+       </li>
+        <li class="flex">
+            <div class="name">科室</div>
+            <div class="mate">内科</div>
+        </li>
+        <li class="flex">
+            <div class="name">医生</div>
+            <div class="mate">邓忠明</div>
+        </li>
+        <li class="flex">
+            <div class="name">就诊时间</div>
+            <div class="mate">2016-05-27</div>
+        </li>
+        <li class="flex">
+            <div class="name">流水号</div>
+            <div class="mate">86775468930</div>
+        </li>
+    </ul>
+    <div class="box-list">
+        <div class="action">
+            <div class="action-header js-action-header">总金额　<span class="yellow">190.00</span><span class="color999">元</span></div>
+                <ul class="action-content">
+                    <li class="item">
+                        <div class="tit">代文缬沙坦胶囊 80mg*7粒</div>
+                        <div class="des">59.80元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">傲坦奥美沙坦酯片 20mg*7片</div>
+                        <div class="des">50.20元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">科素亚 氯沙坦钾片 100mg*7片</div>
+                        <div class="des">66.00元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">吉加厄贝沙坦片 0.15g*7片</div>
+                        <div class="des">14.00元</div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    <div class="btn btn-ok btn-block" onclick="window.location='../home.html'">确认</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //手风琴
+        $(document).on('click','.js-action-header ',function(){
+            $(this).toggleClass('show');
+            $(this).next().toggleClass('show');
+        })
+    });
+</script>

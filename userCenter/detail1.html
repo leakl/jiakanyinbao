@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>就诊详情</title>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <script src="../static/js/lib/zepto.min.js" type="text/javascript"></script>
+    <script src="../static/js/lib/fastclick.min.js" type="text/javascript"></script>
+
+</head>
+<body class="bg-gray">
+<div id="header">
+    <span class="return" onclick="window.location='../record.html'"><i class="iconfont">&#xe600</i>返回</span>
+    <h2>就诊详情</h2>
+    <span class="menu"></span>
+</div>
+<div class="userCenterBox">
+    <ul class="y-list">
+        <li class="flex">
+            <div class="name">姓名</div>
+            <div class="mate">*慧</div>
+        </li>
+        <li class="flex">
+            <div class="name">就诊卡号</div>
+            <div class="mate">61****62</div>
+        </li>
+    </ul>
+
+    <ul class="y-list">
+       <li class="flex">
+           <div class="name">医院</div>
+           <div class="mate">广东省中医院大德路分院</div>
+       </li>
+        <li class="flex">
+            <div class="name">科室</div>
+            <div class="mate">内科</div>
+        </li>
+        <li class="flex">
+            <div class="name">医生</div>
+            <div class="mate">李成</div>
+        </li>
+        <li class="flex">
+            <div class="name">就诊时间</div>
+            <div class="mate">2016-01-29</div>
+        </li>
+        <li class="flex">
+            <div class="name">流水号</div>
+            <div class="mate">75692345879</div>
+        </li>
+    </ul>
+    <div class="box-list">
+        <div class="action">
+            <div class="action-header js-action-header">总金额　<span class="yellow">140.00</span><span class="color999">元</span></div>
+                <ul class="action-content">
+                    <li class="item">
+                        <div class="tit">吗丁啉多潘立酮片 10mg*30片</div>
+                        <div class="des">16.80元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">芬必得布洛芬缓释胶囊 0.3g*20粒</div>
+                        <div class="des">24.80元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">香雪抗病毒口服液 10ml*12支</div>
+                        <div class="des">25.00元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">世福素头孢克肟颗粒 50mg*6袋</div>
+                        <div class="des">42.10元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">都乐金嗓子喉片 12片</div>
+                        <div class="des">12.50元</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">感康复方氨酚烷胺片 12片</div>
+                        <div class="des">18.80元</div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="btn btn-ok btn-block" onclick="window.location='wallet.html'">确认</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //手风琴
+        $(document).on('click','.js-action-header ',function(){
+            $(this).toggleClass('show');
+            $(this).next().toggleClass('show');
+        })
+    });
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>添加保单</title>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <script src="../static/js/lib/zepto.min.js" type="text/javascript"></script>
+    <script src="../static/js/lib/fastclick.min.js" type="text/javascript"></script>
+
+</head>
+<body class="bg-gray">
+<div id="header">
+    <span class="return" onclick="window.location='wallet.html'"><i class="iconfont">&#xe600</i>返回</span>
+    <h2>添加保单</h2>
+    <span class="menu"></span>
+</div>
+<div class="userCenterBox">
+    <div class="page-title">添加关联公司</div>
+   <ul class="relation-list js-relation-list">
+       <li class="show"><i class="iconfont icon-radio"></i>新华人寿</li>
+       <li><i class="iconfont icon-radio"></i>平安保险</li>
+       <li><i class="iconfont icon-radio"></i>泰康人寿</li>
+       <li><i class="iconfont icon-radio"></i>君康人寿</li>
+       <li><i class="iconfont icon-radio"></i>太平洋保险</li>
+   </ul>
+    <div class="page-title">输入流水号或扫描订单二维码</div>
+    <div class="codeBox">
+        <input class="yx-input" type="text" placeholder="请输入"/>
+        <i class="iconfont icon-code">&#xe613;</i>
+    </div>
+    <div>
+        <button type="button" class="btn btn-ok btn-block" onclick="window.location='wallet1.html'">提交</button>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //手风琴
+        $(document).on('click','.js-relation-list li ',function(){
+           $('.js-relation-list li').removeClass('show');
+            $(this).addClass('show');
+        })
+    });
+</script>

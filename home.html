@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>健康银包</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <style type="text/css">
+        .cost{
+            color: orange;
+            font-size: 24px;
+            font-weight: 900;
+        }
+        .home_tips{
+            font-size: 20px;
+            padding: 30px 0;
+            text-align: center;
+            background-color: #fff;
+            color: #333;
+        }
+        .xianjing{
+            background-color: #fff4ec;
+            padding: 15px;
+            color: #ff9446;
+        }
+        .icon-tips{
+            background-image: url("static/images/tips.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 0 0;
+            width: 18px;
+            display: inline-block;
+            height: 18px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .icon_in{
+
+            display: block;
+            margin: 0 auto;
+            width: 60px;
+            height: 60px;
+        }
+        .icon_in_one{
+            background-position: 0 0;
+            background-image: url("static/images/home_ping.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .icon_in_two{
+            background-position: 0 100%;
+            background-image: url("static/images/home_ping.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: #f4f6f6">
+<div class="flex-list2 alignCenter border_x">
+    <div class="avt" onclick="window.location='userCenter/index.html'">
+        <span><img src="static/images/user-def.png" width="40" height="40"></span>蕾同
+    </div>
+    <div class="flex text-right" onclick="window.location='pay_record.html'">支付记录<i class="arrow_2"></i></div>
+</div>
+<div class="space15 border_x"></div>
+<div class="home_tips border_x">
+    <p>健康银包已为你节省</p>
+    <p><span class="cost">230</span> 元</p>
+</div>
+<div class="xianjing border_x"><i class="icon-tips"></i>点击领取30元健康代金卷！ </div>
+<div class="main_in">
+    <div class="item">
+        <a href="sceneJiuYi/index.html">
+            <i class="icon_in icon_in_one"></i>
+            <span>现场就医</span>
+        </a>
+    </div>
+    <div class="item">
+        <a href="http://remote.yx129.com/Mobile/Index/index?appid=wx55dc449c8afc481c&openid=oKoR4v6TsgrsBj1KQYPx5waMLWok">
+            <i class="icon_in icon_in_two"></i>
+            <span>远程会诊</span>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

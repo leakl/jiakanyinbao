@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>智能候诊</title>
+    <link rel="stylesheet" href="../../css/style.css?v=0"/>
+    <link rel="stylesheet" href="../../css/wait.css?v=1"/>
+    <script type="text/javascript" src="../../js/lib/jquery.min1.9.js" ></script>
+    <script type="text/javascript" src="../../js/lib/fastclick.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+</head>
+<body>
+<div id="body">
+    <div class="headerSelectNav">
+        <div class="navView" id="js-navView" onclick="showNavList()">就诊人: <span class="js-value skinColor" userId="11">*志高 （10012336）</span> <i class="iconfont">&#xe603;</i></div>
+        <div class="navList" id="js-navList">
+            <ul class="yx-list">
+                <li class="Title_label color999">选择就诊人<i class="iconfont">&#xe602;</i></li>
+                <li class="js-item" userId="11"><div class="js-title">*志高（10012336）</div></li>
+                <li class="js-item" userId="22"><div class="js-title">*小城（10012335）</div></li>
+                <li class="js-item" userId="33"><div class="js-title">*伍訄（10012337）</div></li>
+            </ul>
+        </div>
+    </div>
+    <div id="js-navContent">  
+        <div class="houzhen-wrap">
+            <div class="houzhen-info">
+                <article class="houzhen-doctor">
+                    <p>王明医生（主任）</p>
+                    <p>呼吸内科5室</p>
+                </article>
+                <article class="houzhen-wite">
+                    <div class="houzhen-count">
+                        <span>12人</span>
+                        正在等待
+                    </div>
+                    <div class="houzhen-on">
+                        <span>5号</span>
+                        正在就诊
+                    </div>
+                </article>
+            </div>
+            <div class="houzhen-infoList">
+                <ul class="yx-list">
+                    <li>
+                        <div class="label">排队号</div>
+                        <div class="values"><span>16</span>号</div>
+                    </li>
+                    <li>
+                        <div class="label">状态</div>
+                        <div class="values">等待候诊</div>
+                    </li>
+                    <li>
+                        <div class="label">候诊时间</div>
+                        <div class="values">请提前30分钟到医院就诊</div>
+                    </li>
+                    <li>
+                        <div class="label">就诊时间</div>
+                        <div class="values">16:30-17:30</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div id="copyright">医享网出品</div>
+</body>
+</html>
+<script type="text/javascript" src="../../js/nav-list.js?v=2"></script>

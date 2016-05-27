@@ -1,0 +1,356 @@
+*{ box-sizing: border-box;}
+.userCenterBox{
+  padding: 15px;
+}
+.y-list{
+  border: #e8e8e8 1px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  padding:0 8px;
+  margin-bottom: 15px;
+  li{
+    padding: 15px 5px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    &.arrow{ padding-right: 20px;}
+    &.arrow:before{
+      font-family:"iconfont" !important;
+      font-size:16px;
+      font-style:normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+
+      display: block;
+      color: #c8c7cd;
+      content: "\e60c";
+      position: absolute;
+      margin-top: -8px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+    &.imgDiv{ padding:  8px 5px;
+      .name{ line-height: 40px;}
+      img{ vertical-align: middle;}
+    }
+    &.barCode{
+      .name,.imgBox,.mate{ display: block;}
+      .imgBox{ text-align: center; overflow: hidden;;
+        img{ max-height: 80px; overflow: hidden; max-width: 100%;}
+      }
+      .mate{ text-align: center;}
+    }
+    &:after{  @include half-lineY;  }
+    &:last-child:after{  height: 0}
+    .icon-usercenter{ font-size: 40px; display: inline; line-height: 1; vertical-align: middle;  }
+    .userText{ font-size: $fontSize;  line-height: 1; display: inline;vertical-align: middle;}
+    &:nth-child(2) .icon-usercenter{  color:$roseRed;  }
+    &:nth-child(3) .icon-usercenter{  color:$blue;  }
+    &:nth-child(4) .icon-usercenter{  color:$orange;  }
+    &:nth-child(5) .icon-usercenter{  color:$green;  }
+    .pic{ border-radius: 50%; width: 60px; height: 60px; display: inline-block; vertical-align: middle;}
+    .icon-woman{ color: $roseRed;}
+    .icon-man{ color: $blue;}
+    .info{ padding-left: 70px; padding-right:20px;width: 100%; transform: translateX(-70px); line-height: 25px;  vertical-align:middle;display: inline-block;
+      .div{  overflow: hidden;  text-overflow: ellipsis;  width: 100%;  }
+      .des{ color: #999; font-size: $smallSize;}
+    }
+
+    /*wallet*/
+    &.flex,.flex{
+      display: flex;
+      flex-flow: nowrap;
+    }
+    .name{-moz-flex:1;
+      -webkit-flex:1;
+      flex:1;
+    }
+    .mate{-moz-flex:2;
+      -webkit-flex:2;
+      flex:2;
+      text-align: right;
+      color: #666;
+      span.block{ display: block;}
+      &.addPolicy{ text-align: center; color: #37b494;}
+      &.detail{ text-align: center; color: #000;font-size: $bigSize;  }
+    }
+  }
+
+}
+
+
+/*detail*/
+.box-list{
+  border: #e8e8e8 1px solid;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  .action-header{
+    overflow: hidden;
+    padding: 0.9em 35px 0.9em 0.9em;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &.show:before{
+      content: "\e602";
+    }
+    &:before{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    color: #c8c7cd;
+    content: "\e601";
+    position: absolute;
+    margin-top: -12px;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+   }
+    &:after{
+      @include half-lineY;
+    }
+  }
+  .action:last-child .action-header:after{  height: 0;}
+  .action:last-child .action-header.show:after{  @include half-lineY;}
+  .action:last-child .action-content.show:after{  height: 0;}
+
+  .action:first-letter .action-header{ border-radius: 5px 5px 0 0;}
+  .action:last-child .action-header,  .action:last-child .action-content.show{ border-radius:  0 0 5px 5px;}
+  .action:last-child .action-content.show .item:last-child{ border-radius:  0 0 5px 5px;}
+
+  .action-content{
+    background-color: #fcfbfb;
+    padding: 0 13px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    &.show{
+      height: auto;
+      overflow: hidden;
+      transition: all 0.3s ease 0s;
+      position: relative;
+      &:after{
+        @include half-lineY;
+      }
+    }
+   .item{
+       display: flex;
+       flex-flow: nowrap;
+     padding: 0.9em 0;
+     position: relative;
+
+     &:after{
+       @include half-lineY;
+     }
+     &:last-child:after{
+       height: 0;
+     }
+     .tit{-moz-flex:2;
+       -webkit-flex:2;
+       flex:2;
+     }
+     .des {
+       -moz-flex: 1;
+       -webkit-flex: 1;
+       flex: 1;
+       color: #ff7800;
+       text-align: right;
+     }
+   }
+  }
+}
+
+/*record*/
+.r-item{
+    padding: 0 5px!important;
+  .flex{ font-size: $bigSize;
+    .name{
+      -moz-flex:2;
+      -webkit-flex:2;
+      flex:2;
+    }
+    .mate {
+      -moz-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      text-align: right;
+      color: #ff8522;
+    }
+  }
+  .ac-header{
+    padding: 10px 0;
+    p{ margin: 0; line-height: 25px}
+    p.states{ color: #666;}
+    p.time{ color: #999;}
+  }
+  .ac-content{
+    height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    &.show{
+      padding-top: 10px;
+      height: auto;
+      overflow: hidden;
+      transition: all 0.3s ease 0s;
+      position: relative;
+    }
+
+    &:after{
+      @include  half-line;
+    }
+    .flex{ font-size: $fontSize;}
+    .title{ font-size: $bigSize;}
+    .name{ color: #666;}
+    .mate{ color: #333;}
+  }
+  .a-more{
+    color: #37b494;
+    display: block;
+    padding: 15px 0 10px;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+  }
+  .action-arrow{
+    width: 100%;
+    height: 45px;
+    line-height: 40px;
+    padding-bottom: 5px;
+    display: block;
+    position: relative;
+    text-align: center;
+    &:after{
+      @include  half-line;
+
+    }
+    &.show .iconfont:before{
+      content: "\e602";
+    }
+    .iconfont{ width: 25px; height: 25px; display: inline-block; vertical-align: middle; color: #999; position: relative;
+      &:before{
+        font-family:"iconfont" !important;
+        font-size:16px;
+        font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+        display: block;
+        color: #c8c7cd;
+        content: "\e601";
+        position: absolute;
+        margin-top: -20px;
+        top: 50%;
+        left: 0;
+      }
+
+    }
+}
+
+}
+/*relation*/
+.page-title{ padding: 0px 0 5px; }
+.relation-list{
+  background-color: #fff;
+  padding: 0 10px;
+  border: #e8e8e8 1px solid;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  li{
+    padding: 15px 5px;
+    position: relative;;
+    &:after{
+      @include  half-lineY;
+    }
+    &:first-child{ border-radius: 5px 5px 0 0;}
+    &:last-child{ border-radius:0 0 5px 5px;
+      &:after{ height: 0;}
+    }
+    &.show{
+      .icon-radio:before{
+        content: "\e608";
+        color: #37b494;
+      }
+    }
+    .icon-radio{width: 23px; height: 20px; display: inline-block; vertical-align: middle; color: #999; position: relative;
+
+      &:before{
+        font-family:"iconfont" !important;
+        font-size:18px;
+        font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+        display: block;
+        color: #c8c7cd;
+        content: "\e607";
+        position: absolute;
+        margin-top: -16px;
+        top: 50%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.codeBox {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: #e8e8e8 1px solid;
+  background-color: #fff;
+  display: flex;
+  flex-flow: nowrap;
+  margin-bottom: 15px;
+  .yx-input{
+    -moz-flex:1;
+    -webkit-flex:1;
+    flex:1;
+    height: 43px;
+    line-height: 1;
+    padding: 5px;
+    box-sizing: border-box;;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px 0  0 5px;
+    font-size: $fontSize;
+  }
+  .icon-code{ width: 43px; height: 43px; display: inline; text-align: center; vertical-align: middle; font-size: 28px; color: #37b494;}
+}
+
+/*GuahaoRecord*/
+.y-list.guahaoRecord li {
+
+
+  .name{
+    white-space: nowrap;;
+    overflow: hidden;;
+    -moz-flex:1;
+    -webkit-flex:1;
+    flex:1;
+    .tit,.time,.tis{
+      white-space: nowrap;;text-overflow: ellipsis;;  overflow: hidden;;
+
+    }
+  }
+  .mates{
+    width: 90px;
+    text-align: right;
+  position: relative;;
+    top: 50%;
+    margin-top: 25px;
+    white-space: nowrap;;
+    text-overflow: ellipsis;;
+    overflow: hidden;;
+  }
+}

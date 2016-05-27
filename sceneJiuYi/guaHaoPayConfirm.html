@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>在线支付</title>
+    <link rel="stylesheet" href="../sceneJiuYi/static/css/sceneJiiyi.css"/>
+    <script src="../static/js/lib/jquery.min1.9.js" type="text/javascript"></script>
+    <script src="../static/js/lib/zepto.min.js" type="text/javascript"></script>
+    <script src="../static/js/lib/fastclick.min.js" type="text/javascript"></script>
+    <script src="../sceneJiuYi/static/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="body">
+    <div id="guoHao">
+            <ul class="yx-list">
+                <li class="flex">
+                    <div class="flexItem w120">医院名称</div>
+                    <div class="color666 flexItem textRight">广东省中医院</div>
+                </li>
+                <li class="flex">
+                    <div class="flexItem w120">业务名称</div>
+                    <div class="color666 flexItem textRight">挂号费</div>
+                </li>
+                <li class="flex">
+                    <div class="flexItem w120">科室</div>
+                    <div class="color666 flexItem textRight">内科</div>
+                </li>
+                <li class="flex">
+                    <div class="flexItem w120">医生</div>
+                    <div class="color666 flexItem textRight">邓忠明（主治医师）</div>
+                </li>
+                <li class="flex">
+                    <div class="flexItem w120">就诊时间</div>
+                    <div class="color666 flexItem textRight"><span class="js-dateNow"></span> 10:00-10:30</div>
+                </li>
+                <li class="flex">
+                    <div class="flexItem w120">患者姓名</div>
+                    <div class="color666 flexItem textRight">*慧</div>
+                </li>
+                <li class="flex">
+                    <div class="flexItem w120">卡号</div>
+                    <div class="color666 flexItem textRight">425154********2521</div>
+                </li>
+                <li class="flex">
+                    <div class="flexItem w120">付款金额</div>
+                    <div class="color666 flexItem textRight"><span class="price">4.00</span>元</div>
+                </li>
+            </ul>
+            <div class="space15"></div>
+            <div class="box-tips icontips"><i class="iconfont">&#xe60d;</i>温馨提示：请在15分钟内完成支付，逾期号源将会作废，需要重新挂号。</div>
+            <div class="btn-w">
+                <button class="btn btn-block btn-ok" onclick="pay()" >确认支付</button>
+                <!--<button class="btn btn-block btn-ok" onclick="go('guaHaoPayDoll.html');" >确认支付</button>-->
+            </div>
+    </div>
+</div>
+<div id="copyright"> 医享网出品 </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    function pay() {
+        try {
+            yx129.appPayOk();
+        }catch (err){
+           // console.log(err)
+        }
+       setTimeout(function () {
+           go('../home.html');
+       },1000)
+    }
+//支付超时
+    function payTimeOut(){
+        box = new $Y.confirm({
+            content:'<div>支付已超时（15分钟），本订单已作废，需要重新挂号。请返回重新挂号。</div>',
+             ok:{
+                 title: '我知道了',
+                 click:function(){ //参数可为空，没有默认方法,不会自动关闭窗体，可用  myBox.close()来关闭
+                     box.close();
+                 }
+             }
+         })
+    }
+//时间
+$(function(){
+    function getToday(){
+        var myDate = new Date();
+        var selTime = myDate.getFullYear() + '-';
+        selTime += (myDate.getMonth() + 1) + '-';
+        selTime += myDate.getDate();
+
+        // return selTime;
+        $('.js-dateNow').text(selTime);
+    }
+    getToday();
+})
+</script>

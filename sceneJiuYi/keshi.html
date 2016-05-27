@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>科室列表</title>
+    <link rel="stylesheet" href="../sceneJiuYi/static/css/sceneJiiyi.css"/>
+    <script src="../static/js/lib/zepto.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="body">
+    <section class="gpsBox">
+        <div class="tab-content" >
+            <div class="tab-nav J_tabNav">
+                <ul>
+                    <li class="active">西区内科门诊</li>
+                    <li>东区皮肤科门诊</li>
+                    <li>西区妇科门诊</li>
+                    <li>东区眼科门诊</li>
+                    <li>西区外科门诊</li>
+                    <li>东区儿科门诊</li>
+                    <li>东区六楼口腔科</li>
+                    <li>东区骨科门诊</li>
+                    <li>东区按摩门诊</li>
+                    <li>东区针灸门诊</li>
+                    <li>东区耳鼻喉门诊</li>
+                    <li>北区康复科门诊</li>
+                    <li>东区七楼肿瘤门诊</li>
+                    <li>东区三楼肝炎门诊</li>
+                    <li>西区三楼简易门诊</li>
+                    <li>北区三楼体检中心</li>
+                    <li>东区六楼心理睡眠科</li>
+                    <li>研修楼七楼中医流派门诊</li>
+                </ul>
+            </div>
+            <div class="tab-menu J_tabMenu">
+                <ul>
+                    <li class="active">
+                        <div class="tab-item" onclick="window.location='doctorList.html'">西区内科门诊</div>
+                        <div class="tab-item">核医学专科</div>
+                        <div class="tab-item">心理睡眠专科</div>
+                        <div class="tab-item">血液专科</div>
+                        <div class="tab-item">深神经内科</div>
+                        <div class="tab-item">头痛专科</div>
+                        <div class="tab-item">肾衰专科</div>
+                        <div class="tab-item">哮喘专科</div>
+                        <div class="tab-item">脑病专科</div>
+                        <div class="tab-item">慢性肾衰</div>
+                        <div class="tab-item">肾病综合征</div>
+                        <div class="tab-item">消化科</div>
+                        <div class="tab-item">糖尿病肾病</div>
+                        <div class="tab-item">代谢病专科</div>
+                        <div class="tab-item">甲亢专科</div>
+                        <div class="tab-item">胸痛中心</div>
+                        <div class="tab-item">记忆障碍专科</div>
+                        <div class="tab-item">脑血管病专科</div>
+                        <div class="tab-item">心血管专科</div>
+                        <div class="tab-item">冠心病专科</div>
+                        <div class="tab-item">肿瘤内科</div>
+                        <div class="tab-item">肾病专科</div>
+                    </li>
+                    <li>
+                        <div class="tab-item">东区皮肤科</div>
+                        <div class="tab-item">皮肤真菌病专科</div>
+                        <div class="tab-item">红斑狼疮专科</div>
+                        <div class="tab-item">银屑病专科</div>
+                        <div class="tab-item">脱发专科</div>
+                    </li>
+                    <li>
+                        <div class="tab-item">西区妇科门诊</div>
+                        <div class="tab-item">妇科护理</div>
+                        <div class="tab-item">妇科肿瘤专科</div>
+                        <div class="tab-item">盆腔炎症专科</div>
+                    </li>
+                    <li>
+                        <div class="tab-item">东区眼科门诊</div>
+                        <div class="tab-item">白内障专科</div>
+                        <div class="tab-item">眼底病专科</div>
+                        <div class="tab-item">黄斑病专科</div>
+                        <div class="tab-item">近视专科</div>
+                    </li>
+                    <li>
+                        <div class="tab-item">西区外科门诊</div>
+                        <div class="tab-item">胃肠外科</div>
+                        <div class="tab-item">血管病专科</div>
+                        <div class="tab-item">泌尿系结石专科</div>
+                        <div class="tab-item">肝胆胰外科</div>
+                    </li>
+                    <li>
+                        <div class="noData">暂无数据</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    $(function(){
+        //切换
+        $(document).on('click','.J_tabNav li',function(){
+            var index = $(this).index();
+            $('.J_tabNav li').removeClass('active');
+            $(this).addClass('active');
+            $('.J_tabMenu li').removeClass('active').eq(index).addClass('active');
+        });
+
+    })
+
+
+</script>
+</body>
+</html>

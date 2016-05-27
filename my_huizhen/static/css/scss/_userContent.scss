@@ -1,0 +1,51 @@
+#userContent{
+  $size:40px;
+  &.ui-center{height: 100%}
+  .ui-grid-halve{
+    li{ padding-right: 10px;}
+    .ui-grid-halve-img{
+      padding: 20% 0;
+
+    }
+  }
+  .grid1{
+    background-color: #f1f9fc;
+    &[data-href]:active{
+      background-color: #CEECF7;
+    }
+    .iconfont{
+      color: #70c5ea;
+      font-size: $size ;
+    }
+  }
+  .grid2{
+    background-color: #fff4e6;
+    &[data-href]:active{
+      background-color: #F7E3C9;
+    }
+    .iconfont{
+      color: #fbb85f;
+      font-size: $size;
+    }
+  }
+  .grid3{
+    background-color: #ffeded;
+    &[data-href]:active{
+      background-color: #fcd4d4;
+    }
+    .iconfont{
+      color: #f68f90;
+      font-size: $size;
+    }
+  }
+  .grid4{
+    background-color: #eafdf7;
+    &[data-href]:active{
+      background-color: #c8ffee;
+    }
+    .iconfont{
+      color: #75eec3;
+      font-size: $size;
+    }
+  }
+}

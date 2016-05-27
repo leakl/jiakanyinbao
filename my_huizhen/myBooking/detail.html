@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>预约详情</title>
+  <script type="text/javascript" charset="UTF-8"></script>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body ontouchstart>
+<section class="ui-container" id="booking">
+  <div class="booking-step">
+    <div class="line"></div>
+    <div class="flex">
+      <div class="item used">
+        <div class="radius"></div>
+        <span>已预约</span>
+      </div>
+      <div class="item used">
+        <div class="radius"></div>
+        <span>已支付</span>
+      </div>
+      <div class="item used">
+        <div class="radius"></div>
+        <span>预约成功</span>
+      </div>
+      <div class="item active">
+        <div class="radius"></div>
+        <span>已诊断</span>
+      </div>
+    </div>
+  </div>
+  <div class="booking-title">预约详情<span class="ui-txt-info">（预约提交时间：2016-04-15 15:01:05）</span></div>
+  <ul class="ui-list ui-list-text ui-border-tb">
+    <li class="ui-border-t">
+      <h4 class="ui-nowrap">预约医院</h4>
+
+      <div class="ui-txt-info">中山大学附属医院</div>
+    </li>
+    <li class="ui-border-t">
+      <h4 class="ui-nowrap">预约科室</h4>
+
+      <div class="ui-txt-info">普外科</div>
+    </li>
+    <li class="ui-border-t">
+      <h4 class="ui-nowrap">预约专家</h4>
+
+      <div class="ui-txt-info">李康南</div>
+    </li>
+    <li class="ui-border-t">
+      <h4 class="ui-nowrap">就诊方式</h4>
+
+      <div class="ui-txt-info">视频会诊</div>
+    </li>
+    <li class="ui-border-t">
+      <h4 class="ui-nowrap">预约费用</h4>
+      <div class="ui-txt-info"><span class="cost">500.00</span> 元</div>
+    </li>
+    <li class="ui-border-t">
+      <h4 class="ui-nowrap">会诊时间</h4>
+      <div class="ui-txt-info">2016-04-19 14:06:10</div>
+    </li>
+  </ul>
+  <div class="space20"></div>
+  <ul class="ui-list ui-list-text ui-border-tb">
+    <li class="ui-border-t list-img-warp">
+      <div class="list-img-title"> 上传资料</div>
+      <ul class="list-img">
+        <li class="list-img-li">
+          <!--<div class="loading animated infinite rotate"><i class="iconfont icon-loading"></i></div>-->
+          <img src="../static/img/grey.gif" data-src="../static/img/grey.gif" width="50" height="50" alt=""/>
+          <a class="btn-remove-pic" href="javascript:;" onclick="removeImg(this,3);"></a>
+          <input type="hidden" name="img"/>
+        </li>
+        <li class="list-img-li">
+          <!--<div class="loading animated infinite rotate"><i class="iconfont icon-loading"></i></div>-->
+          <img src="../static/img/grey.gif" data-src="../static/img/avater_mobile_patient.png" width="50" height="50" alt=""/>
+          <input type="hidden" name="img"/>
+          <a class="btn-remove-pic" href="javascript:;" onclick="removeImg(this,4);"></a>
+        </li>
+        <li class="list-img-li upload-warp">
+          <form enctype="multipart/form-data" id="myUpload" action="#" method="post">
+            <input type="file" class="uploadBtn" id="uploadBtn" onchange="upload(this)" accept="image/jpeg,image/png" name="file"/>
+            <i class="iconfont icon-add"></i>
+          </form>
+        </li>
+
+      </ul>
+      <div class="">
+        <div class="ui-txt-info"> 诊断时间：</div>
+        补齐验血单，重新上传CT照片
+
+      </div>
+    </li>
+  </ul>
+  <div class="space20"></div>
+
+  <!--<div class=" ui-footer-stable ui-btn-group">-->
+    <!--<button class="ui-btn ui-btn-primary ui-btn-lg">支付费用</button>-->
+    <!--<button class="ui-btn  ui-btn-lg" onclick="$('.ui-actionsheet').addClass('show');">取消预约</button>-->
+  <!--</div>-->
+  <div class=" ui-footer-stable ui-btn-group">
+    <button class="ui-btn ui-btn-primary ui-btn-lg" data-href="../../home.html">确定</button>
+    <!--<button class="ui-btn  ui-btn-lg" onclick="$('.ui-actionsheet').addClass('show');">取消预约</button>-->
+  </div>
+
+  <div class="ui-actionsheet">
+    <div class="ui-actionsheet-cnt">
+      <h4>同时会将我从对方的预约列表中删除</h4>
+      <button class="ui-actionsheet-del">确定取消预约</button>
+      <button onclick=" $('.ui-actionsheet').removeClass('show');">我再想想</button>
+    </div>
+  </div>
+
+  <script src="../static/js/lib/jquery2.14.min.js"></script>
+  <script src="../static/js/common.js"></script>
+  <script src="../static/js/lib/jquery.form.js"></script>
+  <script src="../static/js/upload.js"></script>
+</section>
+<!-- /.ui-container-->
+
+<script type="text/javascript">
+  function removeImg(obj, id) {
+    var obj = $(obj);
+    var p = obj.closest('li');
+    p.remove()
+    alert('这里是删除图片,id是' + id)
+  }
+</script>
+</body>
+</html>

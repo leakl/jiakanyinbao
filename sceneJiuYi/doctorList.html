@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>选医生</title>
+    <link rel="stylesheet" href="../sceneJiuYi/static/css/sceneJiiyi.css"/>
+    <script src="../static/js/lib/jquery.min1.9.js" type="text/javascript"></script>
+    <script src="../static/js/lib/zepto.min.js" type="text/javascript"></script>
+    <script src="../static/js/lib/fastclick.min.js" type="text/javascript"></script>
+    <script src="../sceneJiuYi/static/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="body">
+    <div id="select-date"></div>
+    <div class="box-tips fore"><i class="iconfont">&#xe60d;</i>温馨提示：超过16:00不可再挂当天的号。</div>
+    <div class="doctor-list">
+        <ul>
+            <li class="arrow" onclick="go('guaHaoDoctocInfo.html')">
+                <div class="li-right">
+                    <span class="tag skinBgColor label">专家号</span>
+                </div>
+                <div class="pic"><img src="../sceneJiuYi/static/images/touxiang.png"  width="65" height="65"/></div>
+                <div class="info">
+                    <div class="title">邓忠明</div>
+                    <div class="mate">主治医师</div>
+                    <div class="mate">剩余<span class="skinColor fontSize120">8</span>个号</div>
+                </div>
+            </li>
+            <li class="arrow" onclick="go('guaHaoDoctocInfo.html')">
+                <div class="pic"><img src="../sceneJiuYi/static/images/touxiang.png"  width="65" height="65"/></div>
+                <div class="info">
+                    <div class="title">李明政</div>
+                    <div class="mate">副主治医师</div>
+                    <div class="mate">剩余<span class="skinColor fontSize120">20</span>个号</div>
+
+                </div>
+            </li>
+            <li class="arrow" onclick="go('guaHaoDoctocInfo.html')">
+                <div class="pic"><img src="../sceneJiuYi/static/images/touxiang.png"  width="65" height="65"/></div>
+                <div class="info">
+                    <div class="title">刘敏雯</div>
+                    <div class="mate">副主治医师</div>
+                    <div class="mate">剩余<span class="skinColor fontSize120">20</span>个号</div>
+                </div>
+            </li>
+            <li class="arrow" onclick="go('guaHaoDoctocInfo.html')">
+                <div class="pic"><img src="../sceneJiuYi/static/images/touxiang.png"  width="65" height="65"/></div>
+                <div class="info">
+                    <div class="title">胡世云</div>
+                    <div class="mate">主治医师</div>
+                    <div class="mate">剩余<span class="skinColor fontSize120">12</span>个号</div>
+                </div>
+            </li>
+            <li class="arrow" onclick="go('guaHaoDoctocInfo.html')">
+                <div class="pic"><img src="../sceneJiuYi/static/images/touxiang.png"  width="65" height="65"/></div>
+                <div class="info">
+                    <div class="title">苏祥</div>
+                    <div class="mate">主治医师</div>
+                    <div class="mate">剩余<span class="skinColor fontSize120">2</span>个号</div>
+                </div>
+            </li>
+            <li class="arrow" onclick="go('guaHaoDoctocInfo.html')">
+                <div class="pic"><img src="../sceneJiuYi/static/images/touxiang.png"  width="65" height="65"/></div>
+                <div class="info">
+                    <div class="title">魏华</div>
+                    <div class="mate">主治医师</div>
+                    <div class="mate">剩余<span class="skinColor fontSize120">1</span>个号</div>
+                </div>
+            </li>
+            <!--<li class="noDataText">-->
+                <!--今日号源已挂完<br/>请选择其他日期-->
+            <!--</li>-->
+        </ul>
+    </div>
+
+</div>
+
+
+<div id="copyright"> 医享网出品 </div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    //时间
+    (function($){
+        var Time = {};
+        function getToday(){
+            var myDate = new Date();
+            var Y = myDate.getFullYear();
+            var M = myDate.getMonth();
+            var D = myDate.getDate();
+            var date = Y +'-'+M+'-'+D;
+            Time.Y=Y;
+            Time.M=M;
+            Time.D=D;
+            //   console.log(Time);
+        }
+        getToday();
+
+        //获取月份的天数
+        Time.getDaysInMonth = function(year, month) {
+            return 32 - new Date(year, month, 32).getDate();
+        }
+
+        //获取月份中的第一天是所在星期的第几天
+        // month：(0--11) 月份从0开始
+        // return (0-6) 0：星期日 1：星期一 ...
+        Time.getFirstDayOfMonth = function(year, month,day) {
+            var day = day || 1;
+            return new Date(year, month, day).getDay();
+        };
+        window.myDate = Time;
+
+        Time.Run = function(){
+            var my_width = $(window).width()/5;
+            my_width ++;
+            var html ='';
+            var p = Time.D;
+            var week = Time.getFirstDayOfMonth(Time.Y,Time.M,Time.D);
+            for(var i= 1;i<15;i++){
+                if(p>Time.getDaysInMonth(Time.Y,Time.M)){
+                    p = 1;
+                }
+                if(week>6){
+                    week= 0;
+                }
+                var w ='';
+                switch (week){
+                    case 0:
+                        w += '日';
+                        break;
+                    case 1:
+                        w += '一';
+                        break;
+                    case 2:
+                        w += '二';
+                        break;
+                    case 3:
+                        w += '三';
+                        break;
+                    case 4:
+                        w += '四';
+                        break;
+                    case 5:
+                        w += '五';
+                        break;
+                    case 6:
+                        w += '六';
+                        break;
+                }
+                <!--noHook-->
+                if (p == Time.D) {
+                    html += '<div class="d-grid goHook active" style="width:'+my_width+'px"> <div class="d-grid-content"> <span class="week">'+w+'</span><span class="date">今</span></div><div class="border"></div><div class="right-border"></div><div class="border-arrow"><i class="iconfont"></i></div> </div>';
+                }else if(i==2){
+                    html += '<div class="d-grid goHook" style="width:'+my_width+'px"> <div class="d-grid-content"> <span class="week">'+w+'</span><span class="date">'+p+'</span></div><div class="border"></div><div class="right-border"></div><div class="border-arrow"><i class="iconfont"></i></div> </div>';
+
+                }else if(i==5){
+                    html += '<div class="d-grid" style="width:'+(my_width-1)+'px" onclick="$Time.toggle(this)" > <div class="d-grid-content"><div class="d-title"><i class="iconfont"></i><br/><span>展开</span></div></div><div class="border"></div><div class="right-border" style="border: none"></div><div class="border-arrow"><i class="iconfont"></i></div> </div>';
+                    html += '<div class="d-grid goHook" style="width:'+my_width+'px"> <div class="d-grid-content"><span class="week">'+w+'</span><span class="date">'+p+'</span></div><div class="border"></div><div class="right-border"></div><div class="border-arrow"><i class="iconfont"></i></div> </div>';
+                }else{
+                    if( i == 9 || i == 14 ){
+                        html += '<div class="d-grid goHook" style="width:'+(my_width-1)+'px;"> <div class="d-grid-content"> <span class="week">'+w+'</span><span class="date">'+p+'</span></div><div class="border"></div><div class="right-border" style="border: none"></div><div class="border-arrow"><i class="iconfont"></i></div> </div>';
+                    }else{
+                        html += '<div class="d-grid goHook" style="width:'+my_width+'px"> <div class="d-grid-content"> <span class="week">'+w+'</span><span class="date">'+p+'</span></div><div class="border"></div><div class="right-border" ></div><div class="border-arrow"><i class="iconfont"></i></div> </div>';
+                    }
+                }
+                p++;
+                week++;
+            }
+            $('#select-date').html(html);
+            Time.toggle = function(obj){
+                var index = $('.d-grid.active').index();
+                var obj = $(obj);
+                var t =obj.find('.d-title');
+                if(t.hasClass('up')){
+                    t.removeClass('up');
+                    t.find('span').html('展开');
+                    $('#select-date').removeClass('show');
+//                   $('#select-date').animate({height:89},200)
+                    $('.border').show();
+                    if(index>3){
+                        $('.d-grid.active .border-arrow').hide();
+                    }
+                }else{
+                    t.addClass('up');
+                    t.find('span').html('收起')
+                    $('#select-date').addClass('show');
+                    $('.d-grid.active .border-arrow').show();
+                    var size = $('.d-grid').size();
+                    var yu = size%5;
+                    $('.d-grid').slice(size-yu).find('.border').hide();
+
+                }
+            }
+            Time.goHook = function(){
+                if(!$(this).hasClass('noNum')){
+                    $('.d-grid.goHook').removeClass('active');
+                    $('.d-grid.goHook .border-arrow').removeAttr('style')
+                    $(this).addClass('active')
+                }
+//                $Y.loading.show();
+                $('.doctor-list').hide();
+                setTimeout(function(){
+//                    $Y.loading.hide();
+                    $('.doctor-list').show();
+                },500)
+
+            }
+            $('.goHook').on('click',Time.goHook);
+        }
+
+        Time.Run();
+        window.$Time = Time;
+
+
+    }(window.jQuery))
+
+</script>

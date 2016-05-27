@@ -1,0 +1,47 @@
+#my-msg{
+    .my-msg-list{
+        background: none;
+        li{margin: 0 0 10px;
+            padding-top: 5px;
+            padding-left: 15px;
+            background: #fff;
+            &[data-href]:active{
+                background-color: #f5f5f5;
+            }
+            .ui-reddot-static{
+                margin-top: 6px;
+            }
+        }
+    }
+
+    .pageTitle{
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .infoBox{
+        background-color: #fff;
+        padding: 10px 15px;
+        margin: 0 15px 0px;
+        border-radius: 2px;
+    }
+    .stepBox{
+        padding: 10px 0 0 40px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+
+    .xunzhi-Box{
+        padding: 20px;
+        .ui-badge.skinColor{
+            margin: 10px 0;
+            background-color: $skinColor;
+            color: #fff;
+            font-size: 18px;
+            padding: 4px 10px;
+        }
+    }
+
+}

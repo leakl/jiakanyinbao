@@ -1,0 +1,188 @@
+#booking {
+
+  .booking-list {
+    background: none;
+    li {
+      position: relative;
+      padding-top: 37px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      background-color: #fff;
+      &:active{
+        background-color: #f5f5f5;
+      }
+    }
+    p {
+      color: #000;
+    }
+    p.date {
+      padding: 0px 0px 5px 0px;
+      position: absolute;
+      left: 0px;
+      padding-left: 14px;
+      right: 0px;
+      top: 10px;
+    }
+    & > li:after {
+      margin-top: -14px;
+    }
+    .ui-btn {
+      margin-top: -3px;
+    }
+  }
+  .orange {
+    color: orange;
+  }
+  .label {
+    color: #777
+  }
+  .grey{
+    color: #999;
+  }
+  .blue{
+    color: $skinColor;
+  }
+  .li-bg{
+    background-color: #f2f9fc;
+  }
+  .booking-title{
+    margin: 15px 0 15px 8px;
+    line-height: 1;
+    border-left: solid 3px $skinColor;
+    padding-left: 5px;
+    span{font-size: 14px;}
+  }
+  .booking-step{
+    position: relative;
+    margin: 20px 0 30px;
+    .line{
+      background-color: #ddd;
+      height: 3px;
+      position: absolute;
+      left: 12%;
+      right: 12%;
+      top: 50%;
+      margin-top: -15px;
+      z-index: 1;
+    }
+    .flex{display: flex;position: relative;z-index: 2;zoom: 1;}
+    .item{flex: 1;text-align: center;
+      &.used{
+        .radius{background-color: $skinColor;border-color: $skinColor};
+        span{color: $skinColor; }
+      }
+      &.active{
+        .radius{background-color: $skinColor;border-color: $skinColor};
+        span{color: $skinColor; font-weight: bold;}
+      }
+    }
+    .radius{width: 30px;height: 30px;border-radius: 50%;background-color: #fff;border: solid 1px #ddd;margin: 0 auto}
+    .item span{display: block;text-align: center;font-size: 14px;line-height: 2}
+  }
+
+
+  .topMenu{
+    padding-bottom: 10px;
+    .ui-list{
+      background: none;
+      li{
+        &:after{color: #fff;line-height: 39px}
+      }
+      .ui-txt-info{
+        color: #fff;
+      }
+    }
+    .ui-tiled{
+      .num{
+        font-size: 24px;
+        font-family: "Arial Black";
+      }
+      .text{
+        color: #cceaf8;
+      }
+    }
+
+  }
+  .my_btn{
+    background-color: #2ba7e0;
+    color: #fff;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    &:focus{
+      border: none;
+    }
+    &:active{
+      background-color: #2db4f4;
+    }
+  }
+  hr{
+    border: none;
+    height: 1px;
+    background-color: #198ec3;
+    box-shadow: 0 1px 0px #6cc5ee;
+  }
+  .title_sub{
+    color: #666666;
+    display: flex;
+    padding: 5px 15px;
+    background-color: #f0f0f6;
+    .y{
+      color: #a0a0a0;
+    }
+    div.flex1{
+      flex: 1;
+    }
+  }
+ .my_list{
+   .flex-warp{
+     display: flex;
+     color: #666;
+     padding: 12px 15px;
+     align-items: center;
+     .info{
+       flex: 1;
+       line-height: 1.8;
+       .title{
+         font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif ;
+       }
+       .date{
+         color: #999;
+         font-size: 14px;
+       }
+     }
+     .label{
+       text-align: right;
+       .cost{
+         color: #fc9820;
+         font-family: Arial;
+       }
+
+     }
+   };
+ }
+  .ui-box-time i.icon-wangfan{
+    color: #94ddff;
+    font-size: 50px;
+    line-height: 1;
+  }
+  .ui-box-time{
+    padding-bottom: 15px;
+  }
+
+  .my_tips{
+    background-color: #fff6eb;
+    padding: 5px;
+    color: #999;
+    margin: 0 15px 15px;
+  }
+  .icon-sharp{
+    color: #f2c895;
+  }
+}

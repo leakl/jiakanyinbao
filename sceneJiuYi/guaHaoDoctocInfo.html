@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>选时间段</title>
+    <link rel="stylesheet" href="../sceneJiuYi/static/css/sceneJiiyi.css"/>
+    <script src="../static/js/lib/jquery.min1.9.js" type="text/javascript"></script>
+    <script src="../static/js/lib/zepto.min.js" type="text/javascript"></script>
+    <script src="../static/js/lib/fastclick.min.js" type="text/javascript"></script>
+    <script src="../sceneJiuYi/static/js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="body">
+    <div class="doctor-list">
+        <ul>
+            <li class="doctorCart">
+                <div class="li-right">
+                    <span class="tag skinBgColor">专家号</span>
+                </div>
+                <div class="pic"><img src="../sceneJiuYi/static/images/touxiang.png"  width="65" height="65"/></div>
+                <div class="info">
+                    <div class="title">邓忠明</div>
+                    <div class="mate">主治医师</div>
+                </div>
+
+                <div style="clear: both"></div>
+                <div class="des show">
+                    从事内科内分泌临床工作十多年，熟悉各种内分泌疾病的诊断与治疗，尤其擅长糖尿病，甲状腺疾病和骨质疏松及钙磷代谢疾病等的诊治。
+                    <!--擅长：诊治内分泌代谢病，如糖尿病及糖尿病肾病等并发症，-->
+                    <!--<span class="moreCont">甲状腺、甲状旁腺、肾上腺、垂体、痛风、骨质疏松、电解质紊乱等疾病。<br/>详细介绍：医学博士，博士后，硕导。全国优秀中医临床人才，省千百十人才。中华中医药学会糖尿病分会委员，世中联糖尿病分会常委，省中西医结合学会高血压委员会常委。</span>-->
+                    <!--<span class="more skinColor" onclick="doctorCart_show(this)">展开</span>-->
+
+
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="space15"></div>
+    <div class="time-list">
+        <ul>
+            <li class="t-header-w">
+                <div class="t-header">
+                    <div class="t-body"><i class="iconfont">&#xe602;</i></div>
+                    <div class="t-body js-dateNow"><!--2015-10-10--></div>
+                    <div class="t-body"><i class="iconfont">&#xe603;</i></div>
+                    <!--<div class="dateView">切换日期<i class="iconfont">&#xe61d;</i></div>-->
+                </div>
+                <!--<input type="date" class="date-input" value="" />-->
+            </li>
+            <li class="t-item  noNum">
+                <div class="li-left">
+                    <span class="time skinBgColor">09:00-09:30</span>
+                </div>
+                <span class="price">4.00</span><span class="des">元</span>
+                <div class="li-right">满号</div>
+            </li>
+            <li class="t-item  noNum">
+                <div class="li-left">
+                    <span class="time skinBgColor">09:30-10:00</span>
+                </div>
+                <span class="price">4.00</span><span class="des">元</span>
+                <div class="li-right">满号</div>
+            </li>
+            <li class="t-item arrow" onclick="go('guaHaoPay.html')">
+                <div class="li-left">
+                    <span class="time skinBgColor">10:00-10:30</span>
+                </div>
+                <span class="price">4.00</span><span class="des">元</span>
+                <div class="li-right">可挂号</div>
+            </li>
+            <li class="t-item arrow" onclick="go('guaHaoPay.html')">
+                <div class="li-left">
+                    <span class="time skinBgColor">10:00-10:30</span>
+                </div>
+                <span class="price">4.00</span><span class="des">元</span>
+                <div class="li-right">可挂号</div>
+            </li>
+            <li class="t-item arrow" onclick="go('guaHaoPay.html')">
+                <div class="li-left">
+                    <span class="time skinBgColor">10:30-11:00</span>
+                </div>
+                <span class="price">4.00</span><span class="des">元</span>
+                <div class="li-right">可挂号</div>
+            </li>
+            <li class="t-item arrow" onclick="go('guaHaoPay.html')">
+                <div class="li-left">
+                    <span class="time skinBgColor">11:00-11:30</span>
+                </div>
+                <span class="price">4.00</span><span class="des">元</span>
+                <div class="li-right">可挂号</div>
+            </li>
+            <li class="t-item arrow" onclick="go('guaHaoPay.html')">
+                <div class="li-left">
+                    <span class="time skinBgColor">11:30-12:00</span>
+                </div>
+                <span class="price">4.00</span><span class="des">元</span>
+                <div class="li-right">可挂号</div>
+            </li>
+            <!--<li class="t-item noDataText">今日号源已挂完<br/>请选择其他日期</li>-->
+            <!--<li class="t-item noDataText">当前时间不允许预约2小时内的号源<br/>请选择其他时间进行预约</li>-->
+            <!--<li class="t-item noDataText">该医生当天已停诊,请选择<br/>其他时间挂号</li>-->
+            <!--<li class="t-item noDataText">该医生当前班别已停号,请选择<br/>其他时间挂号</li>-->
+            <!--<li class="t-item noDataText">服务器开小差了，获取不到号源，<br/>请刷新试试</li>-->
+        </ul>
+    </div>
+    <!--<div class="btn-w">-->
+        <!--<button type="button" class="btn btn-ok btn-block"><i class="iconfont">&#xe617;</i>立即刷新</button>-->
+    <!--</div>-->
+</div>
+<div id="copyright"> 医享网出品 </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $('.t-header .t-btn').click(function(){
+        var o = $(this);
+        if(!o.hasClass('noData')){
+            o.addClass('active');
+            setTimeout(function(){
+                o.removeClass('active');
+            },250)
+        }
+    });
+
+    function doctorCart_show(obj){
+        var obj = $(obj).parents('.des'),text = $(obj).find('.more');
+        if(obj.hasClass('show')){
+            obj.removeClass('show');
+            text.text('展开');
+        }else{
+            obj.addClass('show');
+            text.text('收起');
+        }
+    }
+
+    $(function(){
+        function getToday(){
+            var myDate = new Date();
+            var selTime = myDate.getFullYear() + '-';
+            selTime += (myDate.getMonth() + 1) + '-';
+            selTime += myDate.getDate();
+
+           // return selTime;
+            $('.js-dateNow').text(selTime);
+        }
+        getToday();
+    })
+</script>
