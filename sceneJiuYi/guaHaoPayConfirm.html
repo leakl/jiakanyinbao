@@ -14,38 +14,43 @@
     <script src="../static/js/lib/fastclick.min.js" type="text/javascript"></script>
     <script src="../sceneJiuYi/static/js/common.js" type="text/javascript"></script>
 </head>
+<style>
+    .w120{
+        width: 100px;
+    }
+</style>
 <body>
 <div id="body">
     <div id="guoHao">
             <ul class="yx-list">
                 <li class="flex">
-                    <div class="flexItem w120">医院名称</div>
+                    <div class=" w120">医院名称</div>
                     <div class="color666 flexItem textRight">广东省中医院</div>
                 </li>
                 <li class="flex">
-                    <div class="flexItem w120">业务名称</div>
+                    <div class=" w120">业务名称</div>
                     <div class="color666 flexItem textRight">挂号费</div>
                 </li>
                 <li class="flex">
-                    <div class="flexItem w120">科室</div>
+                    <div class=" w120">科室</div>
                     <div class="color666 flexItem textRight">内科</div>
                 </li>
                 <li class="flex">
-                    <div class="flexItem w120">医生</div>
+                    <div class=" w120">医生</div>
                     <div class="color666 flexItem textRight">邓忠明（主治医师）</div>
                 </li>
                 <li class="flex">
-                    <div class="flexItem w120">就诊时间</div>
-                    <div class="color666 flexItem textRight"><span class="js-dateNow"></span> 10:00-10:30</div>
+                    <div class=" w120">就诊时间</div>
+                    <div class="color666 flexItem textRight"><span class="js-dateNow">2016-06-02</span> 10:00-10:30</div>
                 </li>
                 <li class="flex">
-                    <div class="flexItem w120">患者姓名</div>
+                    <div class=" w120">患者姓名</div>
                     <div class="color666 flexItem textRight">*慧</div>
                 </li>
-                <li class="flex">
-                    <div class="flexItem w120">卡号</div>
-                    <div class="color666 flexItem textRight">425154********2521</div>
-                </li>
+                <!--<li class="flex">-->
+                    <!--<div class="flexItem w120">卡号</div>-->
+                    <!--<div class="color666 flexItem textRight">425154********2521</div>-->
+                <!--</li>-->
                 <li class="flex">
                     <div class="flexItem w120">付款金额</div>
                     <div class="color666 flexItem textRight"><span class="price">4.00</span>元</div>
@@ -87,16 +92,16 @@
          })
     }
 //时间
-$(function(){
-    function getToday(){
-        var myDate = new Date();
-        var selTime = myDate.getFullYear() + '-';
-        selTime += (myDate.getMonth() + 1) + '-';
-        selTime += myDate.getDate();
-
-        // return selTime;
-        $('.js-dateNow').text(selTime);
-    }
-    getToday();
-})
+//$(function(){
+//    function getToday(){
+//        var myDate = new Date();
+//        var selTime = myDate.getFullYear() + '-';
+//        selTime += (myDate.getMonth() + 1) + '-';
+//        selTime += myDate.getDate();
+//
+//        // return selTime;
+//        $('.js-dateNow').text(selTime);
+//    }
+//    getToday();
+//})
 </script>

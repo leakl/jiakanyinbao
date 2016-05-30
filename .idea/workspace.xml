@@ -2,7 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8a8ee79-5824-450d-90fc-333c262c6689" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jiakanyinbao.iml" afterPath="$PROJECT_DIR$/.idea/jiakanyinbao.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bindID.html" afterPath="$PROJECT_DIR$/bindID.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/myBooking/detail.html" afterPath="$PROJECT_DIR$/my_huizhen/myBooking/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/myBooking/list.html" afterPath="$PROJECT_DIR$/my_huizhen/myBooking/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/font/demo.css" afterPath="$PROJECT_DIR$/my_huizhen/static/css/font/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/font/demo.html" afterPath="$PROJECT_DIR$/my_huizhen/static/css/font/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/font/iconfont.css" afterPath="$PROJECT_DIR$/my_huizhen/static/css/font/iconfont.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/font/iconfont.svg" afterPath="$PROJECT_DIR$/my_huizhen/static/css/font/iconfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/demo.css" afterPath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/demo.html" afterPath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/iconfont.css" afterPath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/iconfont.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/iconfont.svg" afterPath="$PROJECT_DIR$/my_huizhen/static/css/iconfont/iconfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/scss/_animate.scss" afterPath="$PROJECT_DIR$/my_huizhen/static/css/scss/_animate.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/scss/_base.scss" afterPath="$PROJECT_DIR$/my_huizhen/static/css/scss/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/scss/_expert.scss" afterPath="$PROJECT_DIR$/my_huizhen/static/css/scss/_expert.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/css/scss/_userContent.scss" afterPath="$PROJECT_DIR$/my_huizhen/static/css/scss/_userContent.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/echo.min.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/echo.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/fastclick.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/fastclick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/jquery.form.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/jquery.form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/jquery2.14.min.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/jquery2.14.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/layer.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/layer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_002.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_002.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_003.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_003.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_004.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_004.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_005.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/mobiscroll/mobiscroll_005.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_huizhen/static/js/lib/sea.js" afterPath="$PROJECT_DIR$/my_huizhen/static/js/lib/sea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay_ok.html" afterPath="$PROJECT_DIR$/pay_ok.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pay_record.html" afterPath="$PROJECT_DIR$/pay_record.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/guaHaoDoctocInfo.html" afterPath="$PROJECT_DIR$/sceneJiuYi/guaHaoDoctocInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/guaHaoPay.html" afterPath="$PROJECT_DIR$/sceneJiuYi/guaHaoPay.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/guaHaoPayConfirm.html" afterPath="$PROJECT_DIR$/sceneJiuYi/guaHaoPayConfirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/css/css/sceneJiiyi.css" afterPath="$PROJECT_DIR$/sceneJiuYi/static/css/css/sceneJiiyi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/css/css/var.css" afterPath="$PROJECT_DIR$/sceneJiuYi/static/css/css/var.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/demo.css" afterPath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/demo.html" afterPath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/iconfont.css" afterPath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/iconfont.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/iconfont.svg" afterPath="$PROJECT_DIR$/sceneJiuYi/static/css/less/font/iconfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/css/sceneJiiyi.css" afterPath="$PROJECT_DIR$/sceneJiuYi/static/css/sceneJiiyi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/fastclick-develop.js" afterPath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/fastclick-develop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/fastclick.js" afterPath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/fastclick.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/iscroll.js" afterPath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/iscroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/jquery.mCustomScrollbar.concat.min.js" afterPath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/jquery.mCustomScrollbar.concat.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/jquery.min1.9.js" afterPath="$PROJECT_DIR$/sceneJiuYi/static/js/lib/jquery.min1.9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/common/_base.scss" afterPath="$PROJECT_DIR$/static/css/common/_base.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/iconfont.svg" afterPath="$PROJECT_DIR$/static/css/iconfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/lib/jquery.min1.9.js" afterPath="$PROJECT_DIR$/static/js/lib/jquery.min1.9.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter/detail.html" afterPath="$PROJECT_DIR$/userCenter/detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter/detail1.html" afterPath="$PROJECT_DIR$/userCenter/detail1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter/guaHaoRecord.html" afterPath="$PROJECT_DIR$/userCenter/guaHaoRecord.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter/index.html" afterPath="$PROJECT_DIR$/userCenter/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter/myInfo.html" afterPath="$PROJECT_DIR$/userCenter/myInfo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter/wallet.html" afterPath="$PROJECT_DIR$/userCenter/wallet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userCenter/wallet1.html" afterPath="$PROJECT_DIR$/userCenter/wallet1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhifuChenggong.html" afterPath="$PROJECT_DIR$/zhifuChenggong.html" />
     </list>
     <ignored path="jiakanyinbao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +83,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            <state relative-caret-position="254">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -37,6 +94,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -76,24 +140,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiankanyinbao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiankanyinbao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jiankanyinbao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -167,18 +214,26 @@
       <option name="presentableId" value="Default" />
       <updated>1464344832747</updated>
       <workItem from="1464344834496" duration="78000" />
-      <workItem from="1464575881746" duration="184000" />
+      <workItem from="1464575881746" duration="340000" />
     </task>
+    <task id="LOCAL-00001" summary="00">
+      <created>1464576076147</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1464576076147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262000" />
+    <option name="totallyTimeSpent" value="418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -207,6 +262,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="00" />
+    <option name="LAST_COMMIT_MESSAGE" value="00" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -214,8 +275,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="254">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding />
         </state>
       </provider>
